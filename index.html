@@ -1,0 +1,512 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Variables in Dart Tutorial</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="variables-in-dart"
+                  title="Variables in Dart Tutorial"
+                  environment="web"
+                  feedback-link="https://github.com/your-repo">
+    
+      <google-codelab-step label="Overview" duration="2">
+        <p>Welcome to the Variables in Dart Tutorial! This codelab will teach you everything you need to know about variables in Dart programming language. Variables are fundamental building blocks that allow you to store and manipulate data in your programs.</p>
+<p><strong>What you'll learn:</strong></p>
+<ul>
+<li>Understanding what variables are and how they work</li>
+<li>Different variable types and data types in Dart</li>
+<li>Proper syntax for declaring variables</li>
+<li>Rules for creating valid variable names</li>
+<li>Working with constants using <code>const</code> keyword</li>
+<li>Naming conventions and best practices</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Basic understanding of programming concepts</li>
+<li>Familiarity with Dart syntax (from Basic Dart Program tutorial)</li>
+</ul>
+<p><strong>Positive</strong><br>
+: This tutorial builds upon the basic Dart concepts and will help you write more structured and maintainable code!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Understanding Variables" duration="3">
+        <p>Variables are containers used to store values in your program. Think of them as labeled boxes where you can put different types of data that you want to use later.</p>
+<h3 is-upgraded>What are Variables?</h3>
+<p>Variables are named storage locations that can hold different types of data. Here's a simple example:</p>
+<pre><code language="language-dart" class="language-dart">// here variable name contains value John.
+var name = "John";
+</code></pre>
+<p>In this example:</p>
+<ul>
+<li><code>name</code> is the variable name</li>
+<li><code>"John"</code> is the value stored in the variable</li>
+<li><code>var</code> is the keyword that tells Dart to create a variable</li>
+</ul>
+<h3 is-upgraded>Why Use Variables?</h3>
+<p>Variables are essential because they allow you to:</p>
+<ul>
+<li>Store data for later use</li>
+<li>Make your code more readable and maintainable</li>
+<li>Perform calculations and operations on data</li>
+<li>Reuse values throughout your program</li>
+</ul>
+<p><strong>Positive</strong><br>
+: Variables make your code dynamic and flexible - you can change their values as your program runs!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Variable Types and Data Types" duration="5">
+        <p>Dart supports several data types that determine what kind of values a variable can store. Understanding these types is crucial for writing effective Dart code.</p>
+<h3 is-upgraded>Basic Data Types in Dart</h3>
+<p>Here are the main data types you'll work with:</p>
+<ul>
+<li><strong>String</strong>: For storing text values (must be in quotes)
+  <ul>
+<li>Examples: <code>"John"</code>, <code>"Hello World"</code>, <code>"123"</code></li>
+</ul>
+</li>
+<li><strong>int</strong>: For storing integer values (whole numbers)
+  <ul>
+<li>Examples: <code>10</code>, <code>-10</code>, <code>8555</code></li>
+</ul>
+</li>
+<li><strong>double</strong>: For storing floating-point values (decimal numbers)
+  <ul>
+<li>Examples: <code>10.0</code>, <code>-10.2</code>, <code>85.698</code></li>
+</ul>
+</li>
+<li><strong>num</strong>: For storing any type of number (both int and double)
+  <ul>
+<li>Examples: <code>10</code>, <code>20.2</code>, <code>-20</code></li>
+</ul>
+</li>
+<li><strong>bool</strong>: For storing true or false values
+  <ul>
+<li>Examples: <code>true</code>, <code>false</code></li>
+</ul>
+</li>
+<li><strong>var</strong>: For storing any value (type inference)
+  <ul>
+<li>Examples: <code>'Bimal'</code>, <code>12</code>, <code>'z'</code>, <code>true</code></li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded>Syntax for Creating Variables</h3>
+<p>The basic syntax for creating a variable in Dart is:</p>
+<pre><code language="language-dart" class="language-dart">type variableName = value;
+</code></pre>
+<p>For example:</p>
+<pre><code language="language-dart" class="language-dart">String name = "John";
+int age = 25;
+double height = 5.9;
+bool isStudent = true;
+</code></pre>
+<p><strong>Negative</strong><br>
+: Remember that Dart is strongly typed, so once you declare a variable with a specific type, you can only assign values of that type to it!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Working with Variables - Examples" duration="5">
+        <p>Let's see how to declare variables and use them in practice with a comprehensive example.</p>
+<h3 is-upgraded>Example: Using Variables in Dart</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+// declaring variables
+String name = "John";
+String address = "USA";  
+num age = 20; // used to store any types of numbers 
+num height = 5.9;
+bool isMarried = false;
+   
+// printing variables value   
+print("Name is $name");
+print("Address is $address");
+print("Age is $age");
+print("Height is $height");
+print("Married Status is $isMarried");
+}
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Name is John
+Address is USA
+Age is 20
+Height is 5.9
+Married Status is false
+</code></pre>
+<h3 is-upgraded>Key Points from the Example</h3>
+<ul>
+<li>We declared variables of different types: <code>String</code>, <code>num</code>, and <code>bool</code></li>
+<li>We used string interpolation (<code>$variableName</code>) to include variables in our output</li>
+<li>The <code>num</code> type can store both integers and floating-point numbers</li>
+<li>Each variable has a descriptive name that indicates its purpose</li>
+</ul>
+<p><strong>Positive</strong><br>
+: Always use descriptive variable names. Don't use names like <code>a</code>, <code>b</code>, <code>c</code> as they make your code harder to understand and maintain!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Rules for Creating Variables" duration="4">
+        <p>Dart has specific rules for creating valid variable names. Following these rules is essential to avoid compilation errors.</p>
+<h3 is-upgraded>Variable Naming Rules</h3>
+<ol type="1">
+<li><strong>Case Sensitivity</strong>: Variable names are case sensitive
+  <ul>
+<li><code>name</code> and <code>Name</code> are different variables</li>
+<li><code>age</code> and <code>Age</code> are different variables</li>
+</ul>
+</li>
+<li><strong>Allowed Characters</strong>: Variable names can consist of:
+  <ul>
+<li>Letters (a-z, A-Z)</li>
+<li>Numbers (0-9)</li>
+<li>Underscore (_)</li>
+<li>Dollar sign ($)</li>
+</ul>
+</li>
+<li><strong>Starting Character</strong>: Variable names cannot start with a number
+  <ul>
+<li>✅ Valid: <code>name1</code>, <code>age_2</code>, <code>$price</code></li>
+<li>❌ Invalid: <code>1name</code>, <code>2age</code>, <code>3price</code></li>
+</ul>
+</li>
+<li><strong>Keywords</strong>: Dart keywords cannot be used as variable names
+  <ul>
+<li>❌ Invalid: <code>var</code>, <code>const</code>, <code>final</code>, <code>if</code>, <code>for</code>, etc.</li>
+</ul>
+</li>
+<li><strong>No Spaces</strong>: Blank spaces are not allowed in variable names
+  <ul>
+<li>❌ Invalid: <code>first name</code>, <code>user age</code></li>
+<li>✅ Valid: <code>firstName</code>, <code>userAge</code>, <code>first_name</code></li>
+</ul>
+</li>
+<li><strong>Special Characters</strong>: Only underscore (_) and dollar ($) are allowed
+  <ul>
+<li>❌ Invalid: <code>name@</code>, <code>age#</code>, <code>price%</code></li>
+<li>✅ Valid: <code>user_name</code>, <code>$price</code>, <code>age_2</code></li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded>Examples of Valid and Invalid Names</h3>
+<pre><code language="language-dart" class="language-dart">// Valid variable names
+String firstName = "John";
+int userAge = 25;
+double price_2 = 99.99;
+String $currency = "USD";
+
+// Invalid variable names (will cause errors)
+// String first name = "John";  // spaces not allowed
+// int 1age = 25;              // cannot start with number
+// double price@ = 99.99;      // special characters not allowed
+// String var = "test";        // keyword not allowed
+</code></pre>
+<p><strong>Negative</strong><br>
+: Breaking these rules will cause compilation errors, so always follow the naming conventions!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Constants in Dart" duration="4">
+        <p>Sometimes you need to store values that should never change during the program's execution. These are called constants.</p>
+<h3 is-upgraded>What are Constants?</h3>
+<p>Constants are variables whose values never change once they are assigned. In programming:</p>
+<ul>
+<li><strong>Mutable</strong> values can be changed</li>
+<li><strong>Immutable</strong> values cannot be changed</li>
+</ul>
+<h3 is-upgraded>Using the <code>const</code> Keyword</h3>
+<p>To create a constant in Dart, use the <code>const</code> keyword:</p>
+<pre><code language="language-dart" class="language-dart">void main(){
+const pi = 3.14;
+// pi = 4.23; // This would cause an error - constants cannot be reassigned
+print("Value of PI is $pi");
+}
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Value of PI is 3.14
+</code></pre>
+<h3 is-upgraded>When to Use Constants</h3>
+<p>Use constants for values that should never change, such as:</p>
+<ul>
+<li>Mathematical constants (π, e)</li>
+<li>Configuration values</li>
+<li>Fixed application settings</li>
+<li>Magic numbers that have specific meanings</li>
+</ul>
+<h3 is-upgraded>Example: Constants in Practice</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+  const double PI = 3.14159;
+  const String APP_NAME = "My Calculator";
+  const int MAX_ATTEMPTS = 3;
+  
+  print("Application: $APP_NAME");
+  print("PI value: $PI");
+  print("Maximum login attempts: $MAX_ATTEMPTS");
+  
+  // These would cause errors:
+  // PI = 3.14;           // Error: Constant variables can't be assigned
+  // APP_NAME = "New App"; // Error: Constant variables can't be assigned
+}
+</code></pre>
+<p><strong>Positive</strong><br>
+: Using constants makes your code more maintainable and prevents accidental changes to important values!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Naming Conventions" duration="3">
+        <p>Following proper naming conventions makes your code more readable and professional. Dart has specific conventions that you should follow.</p>
+<h3 is-upgraded>LowerCamelCase Convention</h3>
+<p>In Dart, variable names should follow the <strong>lowerCamelCase</strong> convention:</p>
+<ul>
+<li>Start with a lowercase letter</li>
+<li>Capitalize the first letter of each subsequent word</li>
+<li>No spaces or special characters between words</li>
+</ul>
+<h3 is-upgraded>Examples of Good Naming</h3>
+<pre><code language="language-dart" class="language-dart">// Good naming conventions
+String firstName = "John";
+String lastName = "Doe";
+int userAge = 25;
+double accountBalance = 1000.50;
+bool isActive = true;
+String emailAddress = "john@example.com";
+
+// Avoid these naming styles
+String firstname = "John";     // missing capital
+String last_name = "Doe";      // using underscore
+int user_age = 25;            // using underscore
+double AccountBalance = 1000.50; // starting with capital
+</code></pre>
+<h3 is-upgraded>Naming Convention Examples</h3>
+<pre><code language="language-dart" class="language-dart">// Not standard way
+var fullname = "John Doe";
+var user_age = 25;
+var EMAIL = "john@example.com";
+
+// Standard way (lowerCamelCase)
+var fullName = "John Doe";
+var userAge = 25;
+var email = "john@example.com";
+const pi = 3.14;
+</code></pre>
+<h3 is-upgraded>Best Practices for Variable Names</h3>
+<ol type="1">
+<li><strong>Be Descriptive</strong>: Choose names that clearly indicate the variable's purpose
+  <ul>
+<li>✅ Good: <code>userAge</code>, <code>productPrice</code>, <code>isLoggedIn</code></li>
+<li>❌ Poor: <code>a</code>, <code>x</code>, <code>temp</code></li>
+</ul>
+</li>
+<li><strong>Use Appropriate Length</strong>: Not too short, not too long
+  <ul>
+<li>✅ Good: <code>firstName</code>, <code>accountBalance</code></li>
+<li>❌ Too short: <code>fn</code>, <code>bal</code></li>
+<li>❌ Too long: <code>userFirstNameFromDatabase</code></li>
+</ul>
+</li>
+<li><strong>Be Consistent</strong>: Use the same naming style throughout your code
+  <ul>
+<li>If you use <code>firstName</code>, also use <code>lastName</code>, not <code>last_name</code></li>
+</ul>
+</li>
+</ol>
+<p><strong>Positive</strong><br>
+: Good naming conventions make your code self-documenting and easier for other developers to understand!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Practice Exercise" duration="4">
+        <p>Now it's time to practice what you've learned about variables in Dart!</p>
+<h3 is-upgraded>Exercise: Student Information System</h3>
+<p>Create a Dart program that stores and displays student information using proper variable types and naming conventions.</p>
+<p><strong>Requirements:</strong></p>
+<ol type="1">
+<li>Declare variables for student name, age, grade, and enrollment status</li>
+<li>Use appropriate data types for each variable</li>
+<li>Follow proper naming conventions</li>
+<li>Use constants for fixed values</li>
+<li>Display all information using string interpolation</li>
+</ol>
+<h3 is-upgraded>Sample Solution</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+  // Constants
+  const String SCHOOL_NAME = "Dart Academy";
+  const int MIN_AGE = 16;
+  
+  // Student information variables
+  String studentName = "Alice Johnson";
+  int studentAge = 18;
+  double studentGrade = 92.5;
+  bool isEnrolled = true;
+  String studentEmail = "alice.johnson@dartacademy.com";
+  
+  // Display student information
+  print("=== Student Information ===");
+  print("School: $SCHOOL_NAME");
+  print("Name: $studentName");
+  print("Age: $studentAge");
+  print("Grade: $studentGrade%");
+  print("Enrolled: $isEnrolled");
+  print("Email: $studentEmail");
+  print("Minimum age requirement: $MIN_AGE");
+  
+  // Calculate and display additional information
+  bool meetsAgeRequirement = studentAge >= MIN_AGE;
+  print("Meets age requirement: $meetsAgeRequirement");
+}
+</code></pre>
+<p><strong>Expected Output:</strong></p>
+<pre><code>=== Student Information ===
+School: Dart Academy
+Name: Alice Johnson
+Age: 18
+Grade: 92.5%
+Enrolled: true
+Email: alice.johnson@dartacademy.com
+Minimum age requirement: 16
+Meets age requirement: true
+</code></pre>
+<p><strong>Negative</strong><br>
+: Try to solve this exercise on your own before looking at the solution!</p>
+<p><strong>Positive</strong><br>
+: Practice is the best way to master variable concepts in Dart!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Common Mistakes to Avoid" duration="2">
+        <p>Let's look at some common mistakes beginners make with variables and how to avoid them.</p>
+<h3 is-upgraded>Common Variable Mistakes</h3>
+<ol type="1">
+<li><strong>Forgetting Semicolons</strong>
+  <pre><code language="language-dart" class="language-dart">// ❌ Wrong
+String name = "John"
+
+// ✅ Correct
+String name = "John";
+</code></pre>
+</li>
+<li><strong>Using Wrong Data Types</strong>
+  <pre><code language="language-dart" class="language-dart">// ❌ Wrong - trying to assign string to int
+int age = "25";
+
+// ✅ Correct
+int age = 25;
+</code></pre>
+</li>
+<li><strong>Poor Variable Names</strong>
+  <pre><code language="language-dart" class="language-dart">// ❌ Poor naming
+String n = "John";
+int a = 25;
+
+// ✅ Good naming
+String name = "John";
+int age = 25;
+</code></pre>
+</li>
+<li><strong>Not Using Constants for Fixed Values</strong>
+  <pre><code language="language-dart" class="language-dart">// ❌ Poor - magic numbers
+double area = 3.14159 * radius * radius;
+
+// ✅ Better - using constant
+const double PI = 3.14159;
+double area = PI * radius * radius;
+</code></pre>
+</li>
+<li><strong>Ignoring Case Sensitivity</strong>
+  <pre><code language="language-dart" class="language-dart">// ❌ Wrong - these are different variables
+String name = "John";
+print(Name); // Error: Name is not defined
+
+// ✅ Correct
+String name = "John";
+print(name);
+</code></pre>
+</li>
+</ol>
+<p><strong>Positive</strong><br>
+: Being aware of these common mistakes will help you write better Dart code from the start!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Next Steps" duration="2">
+        <p>Congratulations! You've completed the Variables in Dart Tutorial. Here's what you've accomplished:</p>
+<h3 is-upgraded>What You've Learned</h3>
+<ul>
+<li>✅ Understanding of what variables are and their purpose</li>
+<li>✅ Knowledge of different data types in Dart</li>
+<li>✅ Proper syntax for declaring variables</li>
+<li>✅ Rules for creating valid variable names</li>
+<li>✅ Working with constants using <code>const</code></li>
+<li>✅ Following naming conventions (lowerCamelCase)</li>
+<li>✅ Best practices for variable usage</li>
+</ul>
+<h3 is-upgraded>Continue Your Learning Journey</h3>
+<p>To expand your Dart knowledge, consider learning about:</p>
+<ul>
+<li><strong>Data Types in Dart</strong> - More detailed coverage of all data types</li>
+<li><strong>Operators in Dart</strong> - How to perform operations on variables</li>
+<li><strong>Control Flow</strong> - Using variables in conditions and loops</li>
+<li><strong>Functions</strong> - Passing variables as parameters</li>
+<li><strong>Collections</strong> - Working with lists, maps, and sets</li>
+<li><strong>Null Safety</strong> - Dart's null safety features</li>
+</ul>
+<h3 is-upgraded>Resources</h3>
+<ul>
+<li><a href="https://dart.dev/guides" target="_blank">Official Dart Documentation</a></li>
+<li><a href="https://dart.dev/guides/language/language-tour" target="_blank">Dart Language Tour</a></li>
+<li><a href="https://dart-tutorial.com" target="_blank">Dart Tutorial Website</a></li>
+<li><a href="https://dartpad.dev" target="_blank">DartPad</a> - Online Dart editor</li>
+</ul>
+<h3 is-upgraded>Final Challenge</h3>
+<p>Create a simple calculator program that:</p>
+<ul>
+<li>Declares variables for two numbers and an operation</li>
+<li>Uses appropriate data types for each variable</li>
+<li>Follows proper naming conventions</li>
+<li>Includes constants for mathematical operations</li>
+<li>Displays the result using string interpolation</li>
+</ul>
+<p><strong>Positive</strong><br>
+: You now have a solid foundation in Dart variables and are ready to tackle more complex programming concepts!</p>
+<p><strong>Negative</strong><br>
+: Remember to always use descriptive variable names and follow the naming conventions you've learned!</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html> 

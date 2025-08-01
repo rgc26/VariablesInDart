@@ -1,0 +1,30 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2025-08-01T12:41:04+08:00",
+  "id": "variables-in-dart",
+  "duration": 25,
+  "title": "Variables in Dart Tutorial",
+  "summary": "Learn about variables, data types, constants, and naming conventions in Dart programming",
+  "source": "variables-in-dart.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown",
+    "programming",
+    "dart"
+  ],
+  "tags": [
+    "web",
+    "dart",
+    "programming",
+    "variables"
+  ],
+  "feedback": "https://github.com/your-repo",
+  "url": "variables-in-dart"
+} 
